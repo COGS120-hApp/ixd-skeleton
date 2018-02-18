@@ -16,8 +16,8 @@ var feelingSelect = require('./routes/feelingSelect');
 var wip = require('./routes/wip');
 var map = require('./routes/map');
 var spider = require('./routes/spider');
-// Example route
-// var user = require('./routes/user');
+
+var loginRoute = require('./routes/html/loginRoute');
 
 var app = express();
 
@@ -44,7 +44,6 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/home', home.view);
-//app.get('/eventSearch', eventSearch.view);
 app.get('/timeSelect', timeSelect.view);
 app.get('/feelingSelect', feelingSelect.view);
 app.get('/eventSearch', (req, res) => { res.redirect("/eventSearch/0")});
@@ -52,8 +51,9 @@ app.get('/eventSearch/:id', eventSearch.view);
 app.get('/wip',wip.view);
 app.get('/map',map.view);
 app.get('/spider', spider.view);
-// Example route
-// app.get('/users', user.list);
+
+app.get('/html/login', loginRoute.view);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
