@@ -22,6 +22,7 @@ var locationPreview = require('./routes/locationPreview');
 var creationSuccessful = require('./routes/creationSuccessful');
 var recentHistory = require('./routes/recentHistory');
 var about = require('./routes/about');
+var navigation = require('./routes/navigation');
 // Example route
 // var user = require('./routes/user');
 
@@ -63,6 +64,7 @@ app.get('/locationPreview', locationPreview.view);
 app.get('/creationSuccessful',creationSuccessful.view);
 app.get('/recentHistory',recentHistory.view);
 app.get('/about',about.view);
+app.get('/navigation', navigation.view);
 
 //////////// REST API /////////////////
 

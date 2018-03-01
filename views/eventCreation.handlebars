@@ -29,14 +29,14 @@
 
 	<div class="container" style="text-align:center; padding-top:calc(40vh - 250px)">
 		<div style="width:90%; margin:auto;">
-			<form>
+			<form id="event_info_form" action="/eventCreationDetails">
 				<div class="row" style="margin:auto;">
 					<div style="width:calc(50% - 97.4px); text-align: right; padding:0.5%;"></div>
 					<strong style="line-height:2em">Pin Name</strong>
 				</div>
 				<div class="row" style="margin:auto;">
 					<div style="width:calc(50% - 97.4px); text-align: right; padding:0.5%;"></div>
-					<input type="text" name="firstname" style="width:194.8px;">
+					<input type="text" name="firstname" style="width:194.8px;" required>
 				</div>
 
 				<div class="row" style="padding-top:25px; margin:auto;">
@@ -66,7 +66,7 @@
 				</div>
 				<div class="row" style="margin:auto;">
 					<div style="width:calc(50% - 97.4px); text-align: right; padding:0.5%;"></div>
-					<textarea name="upload_description" id="description_textbox"></textarea>
+					<textarea name="upload_description" id="description_textbox" required></textarea>
 				</div>
 
 				<div class="row" style="padding-top: 25px; margin:auto;">
@@ -93,7 +93,7 @@
 
 				<div class="row" style="padding-top:25px">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<a href="/eventCreationDetails"><button type="button" id="nxt_btn" class="btn btn-lg btn-primary active btn-login">NEXT</button></a>
+						<a><button type="submit" form="event_info_form" id="nxt_btn" class="btn btn-lg btn-primary active btn-login">NEXT</button></a>
 					</div>
 				</div>
 			</form>
