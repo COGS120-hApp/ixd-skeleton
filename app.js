@@ -26,6 +26,9 @@ var navigation = require('./routes/navigation');
 // Example route
 // var user = require('./routes/user');
 
+//ab test eventSearch alternative
+var eventList = require('./routes/eventList');
+
 var app = express();
 
 // all environments
@@ -65,6 +68,7 @@ app.get('/creationSuccessful',creationSuccessful.view);
 app.get('/recentHistory',recentHistory.view);
 app.get('/about',about.view);
 app.get('/navigation', navigation.view);
+app.get('/eventList', eventList.view);
 
 //////////// REST API /////////////////
 
@@ -86,7 +90,7 @@ var userURL = "/api/user";
 var apiUser = require('./routes/apiUser');
 var apiEvent = require('./routes/apiEvent');
 
-app.get(eventURL + "/:id", apiEvent.get);
+app.get(eventURL + "/:id?", apiEvent.get);
 app.post(eventURL, apiEvent.post);
 app.put(eventURL + "/:id", apiEvent.put);
 app.delete(eventURL + "/:id", apiEvent.delete);
