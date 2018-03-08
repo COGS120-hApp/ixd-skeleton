@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(() => {
     var tags = [] // initialize empty tags
 
@@ -8,6 +10,18 @@ $(document).ready(() => {
 
         console.log(event.target.textContent);
 
-        // add remove to tags here
+        let tag = event.target.textContent;
+
+        let index = tags.indexOf(event);
+
+        if(index == -1){
+            tags.push(tag);
+        } else {
+            tags.splice(index, 1);
+        }
     })
 });
+
+function chooseFile() {
+    $("#fileInput").click();
+ }
