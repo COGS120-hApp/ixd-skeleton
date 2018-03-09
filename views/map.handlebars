@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>Test Page</title>
+	<title>TimeStitch</title>
 
 	<link rel="stylesheet" href="/scripts/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/scripts/bootstrap-material-design/dist/css/bootstrap-material-design.css">
@@ -16,7 +16,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<div class="navbar-header">
-			<a class="navbar-brand center" href="/home"><h3>hApp</h3></a>
+			<a class="navbar-brand center" href="/home"><h3>TimeStitch</h3></a>
 			<a href="/feelingSelect" class="left">
 				<button type="button" class="btn btn-lg btn-header">
 					<img src="/static/icons/back-arrow.svg" height="30"/>
@@ -28,6 +28,12 @@
 		<div class="card" style="text-align:center; margin-top:0; margin-left:0; margin-right:0; height:100%">
 			<div id="map" style="width:100%;height:400px;"></div>
 			<div class="card-body">
+				<h4 class="card-text text-left">{{name}}</h4>
+				<h6 class="card-text text-left">{{distance}}</h6>
+				<p class="card-text text-left">{{description}}</p>
+
+				{{!--This link prompts the user to open navigation app such as google map with predefined locations(same sample locations)--}}
+				<a href="http://maps.apple.com/?saddr=32.880099,-117.233886&daddr=32.882262,-117.233537&dirflg=r"><button class="btn btn-lg btn-primary active">Open Navigation</button></a>
 				<!-- <h4 class="card-text text-left">{{name}}</h4>
 				<h6 class="card-text text-left">{{distance}}</h6> -->
 				<p class="card-text text-left">Happening less than 10 minutes away! Start walking to begin navigation.</p>
