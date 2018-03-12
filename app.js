@@ -25,7 +25,7 @@ var about = require('./routes/about');
 var settings = require('./routes/settings');
 
 //ab test eventSearch alternative
-//var eventList = require('./routes/eventSearch');
+var eventSearchResults = require('./routes/eventSearchResults');
 
 var app = express();
 
@@ -67,6 +67,7 @@ app.get('/recentHistory',recentHistory.view);
 app.get('/about',about.view);
 app.get('/eventList', eventSearch.viewAlt);
 app.get('/settings',settings.view);
+app.get('/eventSearchResults',eventSearchResults.view)
 
 //////////// REST API /////////////////
 

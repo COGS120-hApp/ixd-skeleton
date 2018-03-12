@@ -1,7 +1,7 @@
 .bg-light{
 	background-image: url("../img/timeBackground.jpg") !important;
 	background-size: cover;
-    background-blend-mode: darken;
+    background-blend-mode: lighten;
     background-position:center;
 }
 

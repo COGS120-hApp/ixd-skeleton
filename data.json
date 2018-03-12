@@ -2,49 +2,57 @@
     "events" : [
         { 
             "name" : "Raccoon Spotted",
-            "distance" : "1 mile",
+            "distance" : "0.6 miles",
+            "timeAway" : "12 mins away",
             "description" : "Raccoons have been spotted in Warren!",
             "imageURL" : "/static/img/raccoon.jpg"
         },
         { 
             "name" : "Banquet",
-            "distance" : "7 miles",
+            "distance" : "0.5 miles",
+            "timeAway" : "10 mins away",
             "description" : "Open Banquet, everyone is invited... apparently",
             "imageURL" : "/static/img/banquet.jpg"
         },
         { 
             "name" : "Beach Day",
-            "distance" : "10 miles",
+            "distance" : "1.6 miles",
+            "timeAway" : "32 mins away",
             "description" : "Join us for a BBQ at the beach!",
             "imageURL" : "/static/img/beach_event.jpg"
         },
         { 
             "name" : "Free Concert",
-            "distance" : "13 miles",
-            "description" : "Free concert!!!11!!1!",
+            "distance" : "1.3 miles",
+            "timeAway" : "26 mins away",
+            "description" : "Free concert!!!!!!",
             "imageURL" : "/static/img/concert.jpg"
         },
         { 
             "name" : "Bonfire!",
-            "distance" : "8 miles",
+            "distance" : "1.7 miles",
+            "timeAway" : "34 mins away",
             "description" : "SMORES!",
             "imageURL" : "/static/img/la_jolla_bonfire.jpg"
         },
         { 
-            "name" : "Study session for midterms",
-            "distance" : "1 mile",
-            "description" : "It's week 7, we're dying here!",
+            "name" : "Study session for finals",
+            "distance" : "0.1 miles",
+            "timeAway" : "2 mins away",
+            "description" : "It's week 10, we're dying here!",
             "imageURL" : "/static/img/study_at_geisel.jpg"
         },
         { 
             "name" : "Lan Party",
-            "distance" : "24 miles",
+            "distance" : "0.8 miles",
+            "timeAway" : "16 mins away",
             "description" : "BYOC",
             "imageURL" : "/static/img/lan_party.jpg"
         },
         { 
             "name" : "SDHacks",
-            "distance" : "4 miles",
+            "distance" : "1 mile",
+            "timeAway" : "20 mins away",
             "description" : "Let's build cool things!",
             "imageURL" : "/static/img/hackathon.jpg"
         }
