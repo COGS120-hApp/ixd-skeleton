@@ -4,10 +4,11 @@
  */
 var data = require('../data.json');
 exports.view = function(req, res){
-  //var id = req.params.id;
-  //var event = data.events[id % data.events.length];
-  data["viewAlt"] = false;
-  res.render('eventSearch', data);
+  var payload = {};
+  var id = req.params.id;
+  payload.event = data.events[id % data.events.length];
+  payload.viewAlt = false;
+  res.render('eventSearch', payload);
 };
 exports.viewAlt = function(req, res){
     // var events = data.events;
