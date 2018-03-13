@@ -3,35 +3,11 @@
 $(document).ready(() => {
 	console.log("javascript loaded");
 
-	let splitPath = window.location.pathname.split('/');
-	let id = parseInt(splitPath[splitPath.length - 1]);
-	console.log(id);
-	if(id === 0){
-		$('button.rewind').prop('disabled', true);
-	}
 })
 
 $("#login").click(goToLogIn);
 $("#signup").click(goToSignUp);
-$("button.uninterested").click(cycleForwardThroughEvents);
-$("button.rewind").click(cycleBackwardThroughEvents);
 
-function cycleForwardThroughEvents(event) {
-	event.preventDefault();
-	let splitPath = window.location.pathname.split('/');
-	let id = parseInt(splitPath[splitPath.length - 1]) + 1;
-	console.log(id);
-	$(location).attr('href', '/eventSearch/' + id);
-}
-
-function cycleBackwardThroughEvents(event) {
-	event.preventDefault();
-	let splitPath = window.location.pathname.split('/');
-	let id = parseInt(splitPath[splitPath.length - 1]) - 1;
-	console.log(id);
-
-	$(location).attr('href', '/eventSearch/' + id);
-}
 
 
 function goToLogIn() {
@@ -40,12 +16,12 @@ function goToLogIn() {
 	$("div.login-box").replaceWith('<div class="login-box page-two">\
 			<div class="row">\
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">\
-					<img src="https://statewideguttercompany.com/wp-content/uploads/2012/07/logo-placeholder.jpg" width="100px" height="100px">\
+					<img src="/static/img/icon.png" width="130px" height="100px">\
 				</div>\
 			</div>\
 			<div class="row">\
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">\
-					<h1>hApp</h1>\
+					<h1>TimeStitch</h1>\
 				</div>\
 			</div>\
 			<form style="margin-bottom:0.65em;" id="login_form" action="/about">\
@@ -89,12 +65,12 @@ function goToSignUp() {
 	$("div.login-box").replaceWith('<div class="login-box page-two">\
 			<div class="row">\
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">\
-					<img src="https://statewideguttercompany.com/wp-content/uploads/2012/07/logo-placeholder.jpg" width="100px" height="100px">\
+					<img src="/static/img/icon.png" width="130px" height="100px">\
 				</div>\
 			</div>\
 			<div class="row">\
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">\
-					<h1>hApp</h1>\
+					<h1>TimeStitch</h1>\
 				</div>\
 			</div>\
 			<form id="signup_form" action="/about">\
