@@ -65,14 +65,9 @@ app.get('/locationPreview', locationPreview.view);
 app.get('/creationSuccessful',creationSuccessful.view);
 app.get('/recentHistory',recentHistory.view);
 app.get('/about',about.view);
-<<<<<<< HEAD
-app.get('/navigation', navigation.view);
-app.get('/eventList', eventList.view);
-=======
 app.get('/eventList', eventSearch.viewAlt);
 app.get('/settings',settings.view);
 app.get('/eventSearchResults',eventSearchResults.view)
->>>>>>> 05ef912a54c03101009fc8eab393917b2667f62a
 
 //////////// REST API /////////////////
 
