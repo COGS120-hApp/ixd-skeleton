@@ -32,7 +32,8 @@ function goToLogIn() {
 			</div>\
 			<div class="row login-row form">\
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">\
-					<input type="text" placeholder="PASSWORD" required></input>\
+					<input type="password" placeholder="PASSWORD" id="myInput" required></input>\
+					<input type="checkbox" onclick="myFunction()" style="position:absolute;left:220px;top:7px;">\
 				</div>\
 			</div>\
 			<div class="row login-row form">\
@@ -86,7 +87,7 @@ function goToSignUp() {
 			</div>\
 			<div class="row login-row form">\
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">\
-					<input type="text" placeholder="PASSWORD" required></input>\
+					<input type="password" placeholder="PASSWORD" required></input>\
 				</div>\
 			</div>\
 			<div class="row login-row form">\
@@ -112,4 +113,13 @@ $(".btn.tags.minimal").click(toggleChecked);
 function toggleChecked(event){
 	event.stopPropagation();
 	$(this).toggleClass("checked");
+}
+
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
 }
